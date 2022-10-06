@@ -1,0 +1,36 @@
+# Encoding: cp866
+#system "cls"
+
+students = []
+
+students.push("‚ áï", "¥âï", "ƒ «ï", "’®«ï", " áâï", 
+			  "‚®¢ ", "Œ¨è ", "ƒ« è ", "Œ è ", "‘ è ", 
+			  "€àª è ", "‘â¥¯ è ", "‚ ­ï", "€­ï", "Œ ­ï", 
+			  "‚ «ï", "Œ®­ï", "„ ­ï", "‘ ­ï", "‹î¡ ", 
+			  "ƒà¨è ")
+
+loop do
+	
+	i = 0
+	puts "‘¯¨á®ª áâã¤¥­â®¢:"
+	students.sort!
+	students.each do |namecell|
+		i += 1
+		puts "#{i}. #{namecell}" #, #{agecell}"
+	end
+	
+	print "‚¢¥¤¨â¥ ¨¬ï ¤«ï ¤®¡ ¢«¥­¨ï:"
+	name = gets.strip.capitalize.encode('cp866')
+	# print "“â®ç­¨â¥ ¢®§à áâ:"
+	# age = gets.to_i
+
+	if name != "" # && age >=0 && age <=90
+		students << name
+		puts "“ç¥­¨ª #{name} ¤®¡ ¢«¥­ ¢ á¯¨á®ª. Enter - çâ®¡ë ¯à®¤®¦¨âì."
+	else
+		puts "¥ª®àà¥ªâ­ë© ¢¢®¤. Enter - çâ®¡ë ¯à®¤®¦¨âì."
+		# break
+	end	
+	gets
+
+end
