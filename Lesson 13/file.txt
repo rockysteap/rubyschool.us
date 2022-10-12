@@ -1,0 +1,24 @@
+Оператор перенаправления ввода: 
+> - перезаписывает файл полностью
+>> - дописывает информацию в конец файла
+
+ruby app1.rb > file.txt
+ruby app1.rb >> file.txt
+
+
+==============================
+Name: Mike, age: 65
+Name: Molly, age: 63
+Name: Minnie, age: 55
+Name: Walt, age: 50
+Name: Wins, age: 52
+Name: Wanda, age: 57
+==============================
+==============================
+Name: Mike, age: 65
+Name: Molly, age: 63
+Name: Minnie, age: 55
+Name: Walt, age: 50
+Name: Wins, age: 52
+Name: Wanda, age: 57
+==============================
