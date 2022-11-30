@@ -1,3 +1,3 @@
 # rubyschool.us
-by Roman Pushkin
+/ by Roman Pushkin / 
 Ruby, Sinatra, Rails
