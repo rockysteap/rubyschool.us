@@ -1,0 +1,60 @@
+<h2>
+	Reserve time for services
+</h2>
+
+<form action="/reserve" method="POST" role="form">
+
+  <div class="form-group">
+    <label>Your name</label>
+    <input name="guestname" type="text" class="form-control" placeholder="Enter name here" value="<%=@guestname%>">
+  </div>
+  
+  <div class="form-group">
+    <label>Phone number</label>
+    <input name="phone" type="text" class="form-control" placeholder="Enter phone here" value="<%=@phone%>">
+  </div>
+
+  <div class="form-group">
+  <label>Date and Time</label>
+  <input name="datetime" type="text" class="form-control" placeholder="Enter desired date and time here" value="<%=@datetime%>">
+  </div>
+
+  <div class="form-group">
+    <label>Choose your barber</label>
+    <select name="barber" class="form-control">
+      <option>Jessie Pinkman</option>
+      <option>Walter White</option>
+      <option>Gus Fring</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Choose desired hair color:</label>
+    <select id="color" name="color">
+      <option value="#7bd148">Green</option>
+      <option value="#5484ed">Bold blue</option>
+      <option value="#a4bdfc">Blue</option>
+      <option value="#46d6db">Turquoise</option>
+      <option value="#7ae7bf">Light green</option>
+      <option value="#51b749">Bold green</option>
+      <option value="#fbd75b">Yellow</option>
+      <option value="#ffb878">Orange</option>
+      <option value="#ff887c">Red</option>
+      <option value="#dc2127">Bold red</option>
+      <option value="#dbadff">Purple</option>
+      <option value="#e1e1e1">Gray</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Reserve</button>
+
+</form>
+
+
+<script type="text/javascript">
+
+$(function(){
+  $('#color').simplecolorpicker(); // !! в данной конструкции код в {} выполняется только после загрузки всей страницы
+});
+
+</script>
